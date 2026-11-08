@@ -1,0 +1,437 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url("../img/gimnasio.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: #ff6b00;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #cccccc;
+    max-width: 500px;
+}
+.servicios h2 {
+    font-weight: 800;
+}
+
+.servicios h2 span {
+    color: #ff6b00;
+}
+
+.servicios p {
+    color: #aaaaaa;
+}
+
+.servicio-card {
+    background-color: #1c1c1c;
+    color: white;
+    border: 1px solid #333333;
+    overflow: hidden;
+}
+
+.servicio-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.servicio-card .card-title {
+    color: #ff6b00;
+    font-weight: bold;
+}
+.galeria h2 {
+    font-weight: 800;
+}
+
+.galeria h2 span {
+    color: #ff6b00;
+}
+
+.galeria p {
+    color: #aaaaaa;
+}
+
+.galeria .carousel {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.galeria .carousel-item img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.footer {
+    background-color: #1c1c1c;
+    border-top: 2px solid #ff6b00;
+}
+
+.footer h3 {
+    font-weight: 800;
+}
+
+.footer h3 span {
+    color: #ff6b00;
+}
+
+.footer h5 {
+    color: #ff6b00;
+    font-weight: bold;
+}
+
+.footer p {
+    color: #aaaaaa;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff6b00;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333333;
+}
+.promocion h2 {
+    font-weight: 800;
+}
+
+.promocion h2 span {
+    color: #ff6b00;
+}
+
+.promocion p {
+    color: #aaaaaa;
+}
+
+.modal-content {
+    background-color: #1c1c1c;
+    color: white;
+    border: 1px solid #ff6b00;
+}
+
+.modal-header,
+.modal-footer {
+    border-color: #333333;
+}
+
+.modal-title {
+    color: #ff6b00;
+    font-weight: bold;
+}
+.contacto h2 {
+    font-weight: 800;
+}
+
+.contacto h2 span {
+    color: #ff6b00;
+}
+
+.contacto p {
+    color: #aaaaaa;
+}
+
+.contacto .form-label {
+    color: white;
+}
+
+.contacto .form-control {
+    background-color: #1c1c1c;
+    border: 1px solid #444444;
+    color: white;
+}
+
+.contacto .form-control:focus {
+    border-color: #ff6b00;
+    box-shadow: 0 0 5px rgba(255, 107, 0, 0.5);
+}
+
+.contacto .form-control::placeholder {
+    color: #888888;
+}
+/* Planes */
+/* ENCABEZADO DE PLANES */
+
+.planes-header h1 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.planes-header h1 span {
+    color: #ff6b00;
+}
+
+.planes-header p {
+    color: #aaaaaa;
+}
+
+
+/* TARJETAS DE PLANES */
+
+.plan-card {
+    background-color: #1c1c1c;
+    color: white;
+    border: 1px solid #333333;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff6b00;
+}
+
+.plan-card h3 {
+    color: #ff6b00;
+    font-weight: 800;
+}
+
+.plan-card h2 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.plan-card .periodo {
+    color: #aaaaaa;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.plan-card li {
+    margin-bottom: 15px;
+}
+
+.plan-card hr {
+    border-color: #555555;
+}
+
+.plan-destacado {
+    border: 2px solid #ff6b00;
+}
+
+/* ===== PAGINA NOSOTROS ===== */
+
+.nosotros-hero {
+    padding: 100px 0;
+}
+
+.nosotros-hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.nosotros-hero p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.filosofia h2,
+.valores h2,
+.instalaciones h2 {
+    color: #ff7518;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.filosofia p,
+.valores p,
+.instalaciones p {
+    line-height: 1.7;
+}
+
+.valores .card {
+    background-color: #1c1c1c;
+    color: white;
+    border: 1px solid #333;
+    transition: transform 0.3s;
+}
+
+.valores .card:hover {
+    transform: translateY(-8px);
+}
+
+.valores .card h3 {
+    color: #ff7518;
+    margin-bottom: 15px;
+}
+
+.instalaciones img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+/* ===== MAPA DE CONTACTO ===== */
+
+.mapa h2 {
+    color: #ff7518;
+    font-weight: bold;
+}
+
+.mapa-contenedor {
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
+
+.mapa-contenedor iframe {
+    display: block;
+}
+
+/* ===== PAGINA CONTACTO ===== */
+
+.contacto h1 {
+    color: #ff7518;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.contacto h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    line-height: 1.7;
+}
+
+.formulario-contacto {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
+
+.formulario-contacto h2 {
+    color: #ff7518;
+}
+
+.formulario-contacto .form-label {
+    color: white;
+}
+
+.formulario-contacto .form-control {
+    background-color: #292929;
+    border: 1px solid #444;
+    color: white;
+}
+
+.formulario-contacto .form-control::placeholder {
+    color: #aaa;
+}
+
+.formulario-contacto .form-control:focus {
+    background-color: #292929;
+    border-color: #ff7518;
+    box-shadow: 0 0 0 0.2rem rgba(255, 117, 24, 0.2);
+    color: white;
+}
+
+.redes-sociales h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.redes-sociales a {
+    color: #ff7518;
+    font-size: 1.8rem;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+    color: white;
+}
+
+/* ===== AJUSTES RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    .nosotros-hero {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .nosotros-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .nosotros-hero img {
+        margin-top: 30px;
+    }
+
+    .filosofia,
+    .valores,
+    .instalaciones,
+    .contacto,
+    .mapa {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .formulario-contacto {
+        padding: 20px;
+    }
+
+    .mapa-contenedor iframe {
+        height: 300px;
+    }
+
+}/* Botones naranjas */
+.btn-naranja {
+    display: inline-block;
+    background-color: #ff7518;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-naranja:hover {
+    background-color: #e66510;
+    color: white;
+}
