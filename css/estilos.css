@@ -1,13 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:wght@400;700&family=Oswald:wght@400;500;600;700&display=swap');
+/* ===== CONFIGURACION GENERAL ===== */
+
+/* Texto general */
 body {
     background-color: #121212;
     color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
+
+/* Títulos principales */
+h1, h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* Subtítulos */
+h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.navbar-brand img {
+    object-fit: contain;
+}
+/* Enlaces del navbar */
+.navbar-nav .nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+.navbar-nav .nav-link:hover {
+    color: #ff7518;
+}
+/* ===== INICIO ===== */
 
 .hero {
     min-height: 600px;
     display: flex;
     align-items: center;
-
     background-image:
         linear-gradient(
             to right,
@@ -15,14 +62,12 @@ body {
             rgba(0, 0, 0, 0.3)
         ),
         url("../img/gimnasio.jpg");
-
     background-size: cover;
     background-position: center;
 }
 
 .hero h1 {
     font-size: 65px;
-    font-weight: 800;
 }
 
 .hero h1 span {
@@ -34,15 +79,16 @@ body {
     color: #cccccc;
     max-width: 500px;
 }
-.servicios h2 {
-    font-weight: 800;
-}
 
-.servicios h2 span {
+.servicios h2 span,
+.galeria h2 span,
+.promocion h2 span {
     color: #ff6b00;
 }
 
-.servicios p {
+.servicios p,
+.galeria p,
+.promocion p {
     color: #aaaaaa;
 }
 
@@ -62,17 +108,6 @@ body {
     color: #ff6b00;
     font-weight: bold;
 }
-.galeria h2 {
-    font-weight: 800;
-}
-
-.galeria h2 span {
-    color: #ff6b00;
-}
-
-.galeria p {
-    color: #aaaaaa;
-}
 
 .galeria .carousel {
     max-width: 1000px;
@@ -84,13 +119,12 @@ body {
     object-fit: cover;
     border-radius: 10px;
 }
+
+/* ===== FOOTER ===== */
+
 .footer {
     background-color: #1c1c1c;
     border-top: 2px solid #ff6b00;
-}
-
-.footer h3 {
-    font-weight: 800;
 }
 
 .footer h3 span {
@@ -128,17 +162,8 @@ body {
 .footer-bottom {
     border-top: 1px solid #333333;
 }
-.promocion h2 {
-    font-weight: 800;
-}
 
-.promocion h2 span {
-    color: #ff6b00;
-}
-
-.promocion p {
-    color: #aaaaaa;
-}
+/* ===== PROMOCIONES Y MODAL ===== */
 
 .modal-content {
     background-color: #1c1c1c;
@@ -155,42 +180,11 @@ body {
     color: #ff6b00;
     font-weight: bold;
 }
-.contacto h2 {
-    font-weight: 800;
-}
 
-.contacto h2 span {
-    color: #ff6b00;
-}
-
-.contacto p {
-    color: #aaaaaa;
-}
-
-.contacto .form-label {
-    color: white;
-}
-
-.contacto .form-control {
-    background-color: #1c1c1c;
-    border: 1px solid #444444;
-    color: white;
-}
-
-.contacto .form-control:focus {
-    border-color: #ff6b00;
-    box-shadow: 0 0 5px rgba(255, 107, 0, 0.5);
-}
-
-.contacto .form-control::placeholder {
-    color: #888888;
-}
-/* Planes */
-/* ENCABEZADO DE PLANES */
+/* ===== PLANES ===== */
 
 .planes-header h1 {
     font-size: 45px;
-    font-weight: 800;
 }
 
 .planes-header h1 span {
@@ -200,9 +194,6 @@ body {
 .planes-header p {
     color: #aaaaaa;
 }
-
-
-/* TARJETAS DE PLANES */
 
 .plan-card {
     background-color: #1c1c1c;
@@ -218,12 +209,10 @@ body {
 
 .plan-card h3 {
     color: #ff6b00;
-    font-weight: 800;
 }
 
 .plan-card h2 {
     font-size: 38px;
-    font-weight: bold;
 }
 
 .plan-card .periodo {
@@ -248,7 +237,7 @@ body {
     border: 2px solid #ff6b00;
 }
 
-/* ===== PAGINA NOSOTROS ===== */
+/* ===== NOSOTROS ===== */
 
 .nosotros-hero {
     padding: 100px 0;
@@ -256,7 +245,6 @@ body {
 
 .nosotros-hero h1 {
     font-size: 3rem;
-    font-weight: bold;
     margin-bottom: 25px;
 }
 
@@ -270,7 +258,6 @@ body {
 .valores h2,
 .instalaciones h2 {
     color: #ff7518;
-    font-weight: bold;
     margin-bottom: 25px;
 }
 
@@ -301,38 +288,44 @@ body {
     height: 280px;
     object-fit: cover;
 }
-/* ===== MAPA DE CONTACTO ===== */
 
-.mapa h2 {
-    color: #ff7518;
-    font-weight: bold;
-}
-
-.mapa-contenedor {
-    overflow: hidden;
-    border-radius: 12px;
-    border: 1px solid #333;
-}
-
-.mapa-contenedor iframe {
-    display: block;
-}
-
-/* ===== PAGINA CONTACTO ===== */
+/* ===== CONTACTO ===== */
 
 .contacto h1 {
     color: #ff7518;
     font-size: 2.8rem;
-    font-weight: bold;
 }
 
 .contacto h2 {
-    font-weight: bold;
     margin-bottom: 20px;
 }
 
+.contacto h2 span {
+    color: #ff6b00;
+}
+
 .contacto p {
+    color: #aaaaaa;
     line-height: 1.7;
+}
+
+.contacto .form-label {
+    color: white;
+}
+
+.contacto .form-control {
+    background-color: #1c1c1c;
+    border: 1px solid #444444;
+    color: white;
+}
+
+.contacto .form-control:focus {
+    border-color: #ff6b00;
+    box-shadow: 0 0 5px rgba(255, 107, 0, 0.5);
+}
+
+.contacto .form-control::placeholder {
+    color: #888888;
 }
 
 .formulario-contacto {
@@ -384,7 +377,42 @@ body {
     color: white;
 }
 
-/* ===== AJUSTES RESPONSIVE ===== */
+/* ===== MAPA ===== */
+
+.mapa h2 {
+    color: #ff7518;
+}
+
+.mapa-contenedor {
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
+
+.mapa-contenedor iframe {
+    display: block;
+}
+
+/* ===== BOTONES ===== */
+
+.btn-naranja {
+    display: inline-block;
+    background-color: #ff7518;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-naranja:hover {
+    background-color: #e66510;
+    color: white;
+}
+
+/* ===== RESPONSIVE ===== */
 
 @media (max-width: 768px) {
 
@@ -417,21 +445,4 @@ body {
     .mapa-contenedor iframe {
         height: 300px;
     }
-
-}/* Botones naranjas */
-.btn-naranja {
-    display: inline-block;
-    background-color: #ff7518;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn-naranja:hover {
-    background-color: #e66510;
-    color: white;
 }
